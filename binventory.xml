@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Binventory</Name>
+  <Repository>brtcruiser21/binventory</Repository>
+  <Registry>https://hub.docker.com/r/brtcruiser21/binventory/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/brtcruiser1234/standard/tree/master/bin-inventory</Support>
+  <Project>https://github.com/brtcruiser1234/standard/tree/master/bin-inventory</Project>
+  <Overview>
+Binventory — visual storage bin tracker built for Costco-style totes.&#xD;&#xD;
+See your entire rack at a glance with a visual shelf display. Search items across all bins instantly, add photos to items, print QR code labels, and add items by voice/Siri shortcut.&#xD;&#xD;
+Configurable rack layout (rows × columns), custom lid color types, and MCP integration so Claude AI can query your bins.
+  </Overview>
+  <Category>Tools: Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:3103]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/brtcruiser1234/standard/master/bin-inventory/unraid-template.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/brtcruiser1234/standard/master/bin-inventory/public/favicon.svg</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled/>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WebUI Port" Target="3103" Default="3103" Mode="tcp"
+    Description="Port for the Binventory web interface."
+    Type="Port" Display="always" Required="true" Mask="false">3103</Config>
+  <Config Name="Data Path" Target="/data" Default="/mnt/user/appdata/binventory" Mode="rw"
+    Description="Stores the SQLite database (bin-inventory.db) and item photos. Back this folder up to preserve your data."
+    Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/binventory</Config>
+</Container>
