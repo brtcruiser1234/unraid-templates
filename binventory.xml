@@ -14,7 +14,7 @@
   <Category>Tools: Productivity:</Category>
   <WebUI>http://[IP]:[PORT:3103]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/brtcruiser1234/unraid-templates/main/binventory.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/brtcruiser1234/unraid-templates/main/binventory-icon.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/brtcruiser1234/unraid-templates/main/binventory-logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
