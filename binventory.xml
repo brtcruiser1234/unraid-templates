@@ -7,17 +7,14 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support>https://github.com/brtcruiser1234/standard/tree/master/bin-inventory</Support>
-  <Project>https://github.com/brtcruiser1234/standard/tree/master/bin-inventory</Project>
-  <Overview>
-Binventory — visual storage bin tracker built for Costco-style totes.&#xD;&#xD;
-See your entire rack at a glance with a visual shelf display. Search items across all bins instantly, add photos to items, print QR code labels, and add items by voice/Siri shortcut.&#xD;&#xD;
-Configurable rack layout (rows × columns), custom lid color types, and MCP integration so Claude AI can query your bins.
-  </Overview>
+  <Support>https://github.com/brtcruiser1234/unraid-templates</Support>
+  <Project>https://github.com/brtcruiser1234/unraid-templates</Project>
+  <Overview>Binventory — visual storage bin tracker built for Costco-style totes.&#xD;&#xD;See your entire rack at a glance with a visual shelf display. Search items across all bins instantly, attach photos to items, print QR code labels, and add items by voice/Siri shortcut.&#xD;&#xD;Configurable rack layout (rows x columns) and custom lid color types. Includes MCP integration so Claude AI can query your bins directly.&#xD;&#xD;Single container, no external dependencies. Data (SQLite database and photos) persists to /mnt/user/appdata/binventory.</Overview>
+  <Description>Visual storage bin tracker for Costco-style totes. Search items, add photos, print QR labels, voice entry, and configurable rack layout.</Description>
   <Category>Tools: Productivity:</Category>
   <WebUI>http://[IP]:[PORT:3103]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/brtcruiser1234/unraid-templates/main/binventory.xml</TemplateURL>
-  <Icon>https://raw.githubusercontent.com/brtcruiser1234/standard/master/bin-inventory/public/favicon.svg</Icon>
+  <Icon>https://raw.githubusercontent.com/brtcruiser1234/unraid-templates/main/binventory-icon.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
@@ -25,10 +22,6 @@ Configurable rack layout (rows × columns), custom lid color types, and MCP inte
   <DonateText/>
   <DonateLink/>
   <Requires/>
-  <Config Name="WebUI Port" Target="3103" Default="3103" Mode="tcp"
-    Description="Port for the Binventory web interface."
-    Type="Port" Display="always" Required="true" Mask="false">3103</Config>
-  <Config Name="Data Path" Target="/data" Default="/mnt/user/appdata/binventory" Mode="rw"
-    Description="Stores the SQLite database (bin-inventory.db) and item photos. Back this folder up to preserve your data."
-    Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/binventory</Config>
+  <Config Name="WebUI Port" Target="3103" Default="3103" Mode="tcp" Description="Port for the Binventory web interface." Type="Port" Display="always" Required="true" Mask="false">3103</Config>
+  <Config Name="Data Path" Target="/data" Default="/mnt/user/appdata/binventory" Mode="rw" Description="Stores the SQLite database and item photos. Back this folder up to preserve your data." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/binventory</Config>
 </Container>
