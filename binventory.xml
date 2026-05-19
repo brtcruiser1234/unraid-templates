@@ -16,7 +16,7 @@ Configurable rack layout (rows × columns), custom lid color types, and MCP inte
   </Overview>
   <Category>Tools: Productivity:</Category>
   <WebUI>http://[IP]:[PORT:3103]/</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/brtcruiser1234/standard/master/bin-inventory/unraid-template.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/brtcruiser1234/unraid-templates/main/binventory.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/brtcruiser1234/standard/master/bin-inventory/public/favicon.svg</Icon>
   <ExtraParams/>
   <PostArgs/>
